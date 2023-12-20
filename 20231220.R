@@ -6,3 +6,32 @@ summary(Data)
 
 Color = "red"
 plot(Data, col = Color)
+
+Data=read.table("Example.txt", header = TRUE)
+colnames(Data)    # 列出所有的欄位名稱
+
+colnames(Data)[1] 
+
+colnames(Data)[4]
+
+Result1 = lm(Data[,"Weight"]~Data[,"Height"])
+summary(Result1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
